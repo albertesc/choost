@@ -1,6 +1,5 @@
-import './style.css'
+import accordion from '@choostdev/accordion'
+import tabs from '@choostdev/tabs'
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+tabs({ tab: 'tab', panel: 'tab-panel' })
+accordion({ button: 'accordion-button', panel: 'accordion-panel' })

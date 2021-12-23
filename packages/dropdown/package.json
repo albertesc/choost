@@ -1,10 +1,14 @@
 {
-  "name": "@choost/dropdown",
-  "version": "1.0.0",
+  "name": "@choostdev/dropdown",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertesc/choost/tree/main/packages/dropdown"
   },
   "keywords": [],
   "author": "",

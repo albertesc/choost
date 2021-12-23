@@ -15,5 +15,9 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "@choostdev/accordion": "0.0.1",
+    "@choostdev/tabs": "0.0.1"
   }
 }
