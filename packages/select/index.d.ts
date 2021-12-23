@@ -1,1 +1,1 @@
-declare module '@choostdev/dropdown'
+declare module '@choostdev/select'
