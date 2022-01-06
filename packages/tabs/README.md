@@ -26,8 +26,8 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `tabClass`: Indicates the class of the DOM element that will have the click action.
-- `panelClass`: Indicates the class of the DOM element that will have the show action.
+- `tabClass`: Indicates the class of the DOM element that will have the click action. _Default value: tab-button_
+- `panelClass`: Indicates the class of the DOM element that will have the show action. _Default value: tab-panel_
 
 **Important:** add `aria-controls="tab1"` on a tab element corresponding to the id of the panel. the script uses this to add `.active` class in the correct panel.
 

@@ -23,7 +23,7 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `dropdownClass`: Indicates the class of the DOM element that will have the click action.
+- `dropdownClass`: Indicates the class of the DOM element that will have the click action. _Default value: dropdown-button_
 
 The next sibling element is the one that will be shown and hidden as contextual menu
 

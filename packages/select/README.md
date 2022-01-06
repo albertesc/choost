@@ -27,9 +27,9 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `selectClass`: Indicates the class of `<select>` to use for the custom selector element.
-- `selectBoxClass`: Indicates the css class that you will use to style the selector box. This element is created by the script.
-- `selectOptionClass`: Indicates the css class that you will use to style the selector option. This element is created by the script.
+- `selectClass`: Indicates the class of `<select>` to use for the custom selector element. _Default value: select_
+- `selectBoxClass`: Indicates the css class that you will use to style the selector box. This element is created by the script. _Default value: select-box_
+- `selectOptionClass`: Indicates the css class that you will use to style the selector option. This element is created by the script. _Default value: select-option_
 
 **Note:** This script creates a `<div>` in the DOM with the select options inside it so that you can style it however you want.
 

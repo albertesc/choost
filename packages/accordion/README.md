@@ -26,8 +26,8 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `buttonClass`: Indicates the class of the DOM element that will have the click action.
-- `panelClass`: Indicates the class of the DOM element that will have the unfold action.
+- `buttonClass`: Indicates the class of the DOM element that will have the click action. _Default value: accordion-button_
+- `panelClass`: Indicates the class of the DOM element that will have the unfold action. _Default value: accordion-panel_
 
 #### HTML Example
 
