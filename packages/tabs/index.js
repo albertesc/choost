@@ -1,6 +1,9 @@
-function tabs ({ tab, panel }) {
-  const tabs = document.querySelectorAll(`.${tab}`)
-  const panels = document.querySelectorAll(`.${panel}`)
+function tabs ({
+  tabClass = 'tab-button',
+  panelClass = 'tab-panel'
+} = {}) {
+  const tabs = document.querySelectorAll(`.${tabClass}`)
+  const panels = document.querySelectorAll(`.${panelClass}`)
 
   if (tabs.length !== 0 && panels.length !== 0) {
     tabs.forEach(tab => {
@@ -17,7 +20,7 @@ function tabs ({ tab, panel }) {
       })
     })
   } else {
-    console.error(`TABS ERROR: No tabs found with selectors ".${tab}" or ".${panel}"`)
+    console.error(`TABS ERROR: No tabs found with selectors ".${tabClass}" or ".${panelClass}"`)
   }
 }
 

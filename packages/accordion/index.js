@@ -1,6 +1,9 @@
-function accordion ({ button, panel }) {
-  const buttons = document.querySelectorAll(`.${button}`)
-  const panels = document.querySelectorAll(`.${panel}`)
+function accordion ({
+  buttonClass = 'accordion-button',
+  panelClass = 'accordion-panel'
+} = {}) {
+  const buttons = document.querySelectorAll(`.${buttonClass}`)
+  const panels = document.querySelectorAll(`.${panelClass}`)
 
   if (buttons.length !== 0 && panels.length !== 0) {
     buttons.forEach(button => {
@@ -23,7 +26,7 @@ function accordion ({ button, panel }) {
       })
     })
   } else {
-    console.error(`ACCORDION ERROR: No accordion found with selectors ".${button}" or ".${panel}"`)
+    console.error(`ACCORDION ERROR: No accordion found with selectors ".${buttonClass}" or ".${panelClass}"`)
   }
 }
 

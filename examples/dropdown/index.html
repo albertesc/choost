@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content">
+    <div class="dropdown">
+      <button class="dropdown-button">
+        Dropdown
+        <svg fill="currentColor" width="12" height="13" viewBox="0 0 10 13" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11 18.586-5.293-5.293a1 1 0 0 0-1.414 1.414l7 7c.057.058.12.106.186.147l.013.007.043.024.032.016.012.006.032.014.013.006.032.012.047.016.047.013.014.004a1.023 1.023 0 0 0 .472 0l.014-.004.047-.013.034-.011.013-.005.032-.012.013-.006.032-.014.044-.022.043-.024.042-.026.041-.028.04-.031.039-.033.037-.036 7-7a1 1 0 0 0-1.414-1.414L13 18.586V3a1 1 0 0 0-2 0v15.586Z"
+            transform="matrix(.6211 0 0 .6211 -2.484 -1.242)" />
+        </svg>
+      </button>
+      <div class="dropdown-menu active">
+        <ul>
+          <li>
+            <a href="#">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                </path>
+              </svg>
+              Create
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                </path>
+              </svg>
+              Edit
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4">
+                </path>
+              </svg>
+              Save
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                </path>
+              </svg>
+              Delete
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="dropdown.js"></script>
+</body>
+
+</html>

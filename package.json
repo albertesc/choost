@@ -10,14 +10,20 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.1",
     "standard": "^16.0.4",
+    "tailwindcss": "^3.0.8",
     "vite": "^2.7.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
   "dependencies": {
-    "@choostdev/accordion": "0.0.1",
-    "@choostdev/tabs": "0.0.1"
+    "@choostdev/accordion": "file:packages/accordion",
+    "@choostdev/dropdown": "file:packages/dropdown",
+    "@choostdev/select": "file:packages/select",
+    "@choostdev/tabs": "file:packages/tabs"
   }
 }

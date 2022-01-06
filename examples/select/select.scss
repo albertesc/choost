@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.content {
+  margin: 112px auto 0 auto;
+  max-width: 330px;
+  position: relative;
+}
+
+.form-group {
+  position: relative;
+}
+
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg class='w-6 h-6' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 9l4-4 4 4m0 6l-4 4-4-4'%3E%3C/path%3E%3C/svg%3E");
+  background-position: right 0.7rem center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 0.5rem;
+  border: 0;
+  color: #666668;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  outline: none;
+  padding: 0.7rem 0.7rem 0.7rem 1rem;
+  width: 100%;
+}
+
+.select-box {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 67, 0, 0.25);
+  font-size: 14px;
+  font-weight: 300;
+  left: 0;
+  list-style: none;
+  margin: 0.7rem 0 0 0;
+  opacity: 0;
+  padding: 0.5rem;
+  position: absolute;
+  top: 100%;
+  transform-origin: top center;
+  transform: scale(0.8);
+  transition: transform 200ms ease, visibility 200ms ease, opacity 200ms ease;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+
+  &.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 200ms ease, visibility 200ms ease, opacity 200ms ease;
+    visibility: visible;
+  }
+
+  .select-option {
+    align-items: center;
+    border-radius: 0.4rem;
+    color: #999999;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    line-height: 1;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+
+    &:hover,
+    &.active {
+      background-color: #c0dddf;
+      color: #00747f;
+    }
+  }
+}

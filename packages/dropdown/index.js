@@ -1,5 +1,5 @@
-function dropdown ({ dropdown }) {
-  const dropdowns = document.querySelectorAll(`.${dropdown}`)
+function dropdown ({ dropdownClass = 'dropdown-button' } = {}) {
+  const dropdowns = document.querySelectorAll(`.${dropdownClass}`)
 
   if (dropdowns.length !== 0) {
     dropdowns.forEach(dropdown => {
@@ -18,7 +18,7 @@ function dropdown ({ dropdown }) {
       })
     })
   } else {
-    console.error(`DROPDOWN ERROR: No dropdown found with selector ".${dropdown}"`)
+    console.error(`DROPDOWN ERROR: No dropdown found with selector ".${dropdownClass}"`)
   }
 }
 

@@ -1,5 +1,9 @@
-function select ({ select, selectBox, selectOption }) {
-  const selectors = document.querySelectorAll(`.${select}`)
+function select ({
+  selectClass = 'select',
+  selectBoxClass = 'select-box',
+  selectOptionClass = 'select-option'
+} = {}) {
+  const selectors = document.querySelectorAll(`.${selectClass}`)
 
   if (selectors.length !== 0) {
     selectors.forEach(selector => {
@@ -10,15 +14,15 @@ function select ({ select, selectBox, selectOption }) {
 
       options.forEach(option => {
         box.innerHTML += `
-        <span class="${selectOption}" data-value="${option.value}">
+        <span class="${selectOptionClass}" data-value="${option.value}">
           ${option.innerHTML}
         </span>
       `
       })
-      box.classList.add(selectBox)
+      box.classList.add(selectBoxClass)
       selector.parentNode.insertBefore(box, selector.nextSibling)
 
-      const selectorsBox = box.querySelectorAll(`.${selectOption}`)
+      const selectorsBox = box.querySelectorAll(`.${selectOptionClass}`)
 
       document.addEventListener('click', e => {
         const clickInside = selector.contains(e.target)
@@ -44,7 +48,7 @@ function select ({ select, selectBox, selectOption }) {
       })
     })
   } else {
-    console.error(`SELECT ERROR: No select found with selector ".${select}"`)
+    console.error(`SELECT ERROR: No select found with selector ".${selectClass}"`)
   }
 }
 

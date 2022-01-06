@@ -1,0 +1,115 @@
+html {
+  background: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.content {
+  margin: 112px auto 0 auto;
+  max-width: 230px;
+  position: relative;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+
+  .dropdown-button {
+    align-items: center;
+    appearance: none;
+    background-color: #0360bb;
+    border-radius: 0.5rem;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    justify-content: space-between;
+    letter-spacing: 0.03rem;
+    padding: 0.6rem 1rem;
+
+    svg {
+      margin-left: 0.8rem;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 0.7rem;
+    box-shadow: 0 25px 50px -12px rgba(8, 53, 221, 0.25);
+    font-size: 14px;
+    font-weight: 300;
+    list-style: none;
+    margin: 0.7rem 0 0 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform-origin: top right;
+    transform: scale(0.8);
+    transition: transform 200ms ease, visibility 200ms ease, opacity 200ms ease;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+
+    &.active {
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 200ms ease, visibility 200ms ease,
+        opacity 200ms ease;
+      visibility: visible;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        padding: 0rem 0.5rem 0 0.5rem;
+
+        a {
+          align-items: center;
+          border-radius: 0.4rem;
+          color: #999999;
+          cursor: pointer;
+          display: flex;
+          font-weight: 500;
+          line-height: 1;
+          padding: 0.5rem 1rem;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #cddff1;
+            color: #0360bb;
+          }
+
+          svg {
+            margin-right: 1rem;
+            width: 20px;
+          }
+        }
+
+        &:first-child {
+          margin-top: 0.5rem;
+        }
+
+        &:last-child {
+          border-top: 1px solid #e6e6e6;
+          margin-top: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
