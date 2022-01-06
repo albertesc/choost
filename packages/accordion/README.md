@@ -2,7 +2,7 @@
 
 This module is part of [choost](https://github.com/albertesc/choost), a component library without css styles, only JavaScript. Create your custom design.
 
-With this JavaScript module you will obtain the basic utility of an accordion component.
+With this JavaScript module you will obtain the basic utility of an accordion component. This script provides the `.active` class when you click on button element, use this in your CSS styles for show/hide elements.
 
 ### NPM Installation
 
@@ -17,8 +17,8 @@ npm install @choostdev/accordion
 import accordion from '@choostdev/accordion'
 
 accordion({
-  button: 'accordion-button',
-  panel: 'accordion-panel'
+  buttonClass: 'accordion-button',
+  panelClass: 'accordion-panel'
 })
 ```
 
@@ -26,8 +26,8 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `button` : Indicates the class of the DOM element that will have the click action. _(Required parameter)_
-- `panel` : Indicates the class of the DOM element that will have the unfold action. _(Required parameter)_
+- `buttonClass`: Indicates the class of the DOM element that will have the click action.
+- `panelClass`: Indicates the class of the DOM element that will have the unfold action.
 
 #### HTML Example
 

@@ -2,7 +2,7 @@
 
 This module is part of [choost](https://github.com/albertesc/choost), a component library without css styles, only JavaScript. Create your custom design.
 
-With this module you will obtain the basic utility of a dropdown component.
+With this JavaScript module you will obtain the basic utility of a dropdown component. This script provides the `.active` class when you click on dropdown element, use this in your CSS styles for show/hide elements.
 
 ### NPM Installation
 
@@ -16,14 +16,14 @@ npm install @choostdev/dropdown
 // Import the dropdown module
 import dropdown from '@choostdev/dropdown'
 
-dropdown({ dropdown: 'dropdown' })
+dropdown({ dropdownClass: 'dropdown-button' })
 ```
 
 Remember add `type="module"` on your html script. Example: `<script type="module" src="/main.js"></script>`
 
 #### Parameters
 
-- `dropdown` : Indicates the class of the DOM element that will have the click action. _(Required parameter)_
+- `dropdownClass`: Indicates the class of the DOM element that will have the click action.
 
 The next sibling element is the one that will be shown and hidden as contextual menu
 

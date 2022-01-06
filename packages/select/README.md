@@ -2,7 +2,7 @@
 
 This module is part of [choost](https://github.com/albertesc/choost), a component library without css styles, only JavaScript. Create your custom design.
 
-With this module you will obtain the basic utility of a custom select component.
+With this module you will obtain the basic utility of a custom select component. This script creates a `<div>` in the DOM with the select options inside it so that you can style it however you want.
 
 ### NPM Installation
 
@@ -17,9 +17,9 @@ npm install @choostdev/select
 import select from '@choostdev/select'
 
 select({
-  select: 'select',
-  selectBox: 'select-box',
-  selectOption: 'select-option'
+  selectClass: 'select',
+  selectBoxClass: 'select-box',
+  selectOptionClass: 'select-option'
 })
 ```
 
@@ -27,10 +27,9 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `select` : Indicates the class of `<select>` to use for the custom selector element _(Required parameter)_
-
-- `selectBox` : Indicates the css class that you will use to style the selector box. This element is created by the script _(Required parameter)_
-- `selectOption` : Indicates the css class that you will use to style the selector option. This element is created by the script _(Required parameter)_
+- `selectClass`: Indicates the class of `<select>` to use for the custom selector element.
+- `selectBoxClass`: Indicates the css class that you will use to style the selector box. This element is created by the script.
+- `selectOptionClass`: Indicates the css class that you will use to style the selector option. This element is created by the script.
 
 **Note:** This script creates a `<div>` in the DOM with the select options inside it so that you can style it however you want.
 

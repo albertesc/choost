@@ -2,7 +2,7 @@
 
 This module is part of [choost](https://github.com/albertesc/choost), a component library without css styles, only JavaScript. Create your custom design.
 
-With this JavaScript module you will obtain the basic utility of a tabs component.
+With this JavaScript module you will obtain the basic utility of a tabs component. This script provides the `.active` class when you click on button element, use this in your CSS styles for show/hide elements.
 
 ### NPM Installation
 
@@ -17,8 +17,8 @@ npm install @choostdev/tabs
 import select from '@choostdev/tabs'
 
 tabs({
-  tab: 'tab',
-  panel: 'tab-panel'
+  tabClass: 'tab-button',
+  panelClass: 'tab-panel'
 })
 ```
 
@@ -26,10 +26,10 @@ Remember add `type="module"` on your html script. Example: `<script type="module
 
 #### Parameters
 
-- `tab` : Indicates the class of the DOM element that will have the click action. _(Required parameter)_
-- `panel` : Indicates the class of the DOM element that will have the show action. _(Required parameter)_
+- `tabClass`: Indicates the class of the DOM element that will have the click action.
+- `panelClass`: Indicates the class of the DOM element that will have the show action.
 
-**Important:** Remember add `aria-controls="tab1"` on a tab element corresponding to the id of the panel. the script uses this to add `.active` class in the correct panel.
+**Important:** add `aria-controls="tab1"` on a tab element corresponding to the id of the panel. the script uses this to add `.active` class in the correct panel.
 
 #### HTML Example
 
@@ -53,7 +53,7 @@ This script provides the `.active` class when you click on the button element. U
 ```html
 <!-- Example of active elements -->
 <div>
-  <!-- 👇 This element is created by the script -->
+  <!-- 👇 You are clicked in this element -->
   <div class="tab active" aria-controls="tab1">tab 1</div>
   <div class="tab" aria-controls="tab2">tab 2</div>
   <div class="tab" aria-controls="tab3">tab 3</div>
